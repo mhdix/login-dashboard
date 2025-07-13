@@ -3,24 +3,13 @@ import { useEffect, useState } from "react";
 import styles from "./Auth.module.scss";
 import Button from "@/app/_/components/Button";
 import { useRouter } from "next/navigation";
+import Input from "@/app/_/components/Input";
+import { TRandomUser } from "@/types/TRandomUser";
 
-interface RandomUser {
-  gender: string;
-  name: {
-    title: string;
-    first: string;
-    last: string;
-  };
-  email: string;
-  picture: {
-    large: string;
-    medium: string;
-    thumbnail: string;
-  };
-}
+
 
 export default function Auth() {
-  const [user, setUser] = useState<RandomUser>();
+  const [user, setUser] = useState<TRandomUser>();
   const [isDarkMode, setIsDarkMode] = useState(false);
   const router = useRouter();
   const api = process.env.NEXT_PUBLIC_API_URL;
@@ -72,11 +61,11 @@ export default function Auth() {
               <label htmlFor="username" className={styles.inputLabel}>
                 نام کاربری :
               </label>
-              <input
-                id="username"
+              
+              <Input
+                labelId="username"
                 type="text"
-                value={`${user.name.first} ${user.name.last}`}
-                disabled
+                user={user}
                 className={styles.inputField}
               />
             </div>

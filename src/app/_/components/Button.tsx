@@ -1,4 +1,4 @@
-import { TButton } from "@/types/Button";
+import { TButton } from "@/types/TButton";
 import clsx from "clsx";
 import React from "react";
 import styles from "./Button.module.scss";

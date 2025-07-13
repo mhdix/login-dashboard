@@ -1,11 +1,15 @@
+import { TInput } from "@/types/TInput";
 import React from "react";
 
-
-const Input = () => {
-  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-  console.log(apiUrl)
+const Input = ({ className, user, labelId, type }: TInput) => {
   return (
-    <input type="text" disabled  />
+    <input
+      type={type}
+      id={labelId}
+      value={`${user?.name?.first ?? ""} ${user?.name?.last ?? ""}`}
+      disabled
+      className={className}
+    />
   );
 };
 
