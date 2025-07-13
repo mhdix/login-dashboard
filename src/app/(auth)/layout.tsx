@@ -1,17 +1,9 @@
-interface RandomUser {
-  gender: string;
-  name: {
-    title: string;
-    first: string;
-    last: string;
-  };
-  email: string;
-  picture: {
-    large: string;
-    medium: string;
-    thumbnail: string;
-  };
-}
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'ورود به داشبورد',
+  description: 'داشبورد مدیریت'
+};
 
 export default function RootLayout({
   children,

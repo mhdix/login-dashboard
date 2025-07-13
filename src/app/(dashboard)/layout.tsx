@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Navbar from "./_/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Dashboard",
-  description: "Dashboard layout",
+  title: "داشبورد ",
+  description: "داشبورد مدیریت",
 };
 
 export default function Layout({
