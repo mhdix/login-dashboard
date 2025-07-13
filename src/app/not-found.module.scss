@@ -1,0 +1,23 @@
+.notFound {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  // background: red;
+  color: #f0f0f0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  &__message {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: #ff6b6b;
+  }
+
+  &__button {
+    min-width: 180px;
+  }
+}

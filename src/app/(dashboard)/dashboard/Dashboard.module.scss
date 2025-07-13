@@ -1,0 +1,26 @@
+.dashboard {
+  
+  .message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fef9c3;
+    color: #92400e;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    max-width: 90vw;      /* حداکثر عرض ۹۰٪ عرض صفحه */
+    text-align: center;   /* متن وسط چین */
+    word-wrap: break-word; /* جلوگیری از بیرون زدن متن */
+
+    @media (max-width: 600px) {
+      font-size: 1.2rem;
+      padding: 15px;
+      max-width: 95vw;
+      border-radius: 12px;
+    }
+  }
+}
